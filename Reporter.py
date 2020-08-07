@@ -21,7 +21,7 @@ t = None
 t = r.get("https://app.upc.edu.cn/ncov/wap/default/index").json()
 
 i = t['d']['oldInfo']
-print( t['d'])
+#print( t['d'])#
 i['date'] = t['d']['info']['date']
 i['id'] = t['d']['info']['id']
 i['created'] = t['d']['info']['created']
