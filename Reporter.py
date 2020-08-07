@@ -15,7 +15,7 @@ r.headers = {
 }
 r.get("https://app.upc.edu.cn/uc/wap/login?redirect=https%3A%2F%2Fapp.upc.edu.cn%2Fncov%2Fwap%2Fdefault%2Findex")
 
-print(r.post("https://app.upc.edu.cn/uc/wap/login/check", data={"username": env_dist.get('username'), "password": env_dist.get('password')}))
+print(r.post("https://app.upc.edu.cn/uc/wap/login/check", data={"username": env_dist.get('username'), "password": env_dist.get('password')}).text)
 t = None
 
 t = r.get("https://app.upc.edu.cn/ncov/wap/default/index").json()
