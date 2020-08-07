@@ -24,7 +24,7 @@ jobs:
 
     # Runs a single command using the runners shell
     - run: pip3 install requests 
-    - run: python3 start.py
+    - run: python3 Reporter.py
       env:
         username: ${{secrets.username}}
         password: ${{secrets.password}} 
